@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYUSH Startup Registration Portal - Track Application</title>
+    <link rel="stylesheet" href="track.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Track Your AYUSH Startup Application</h1>
+    </header>
+
+    <!-- Main Content -->
+    <section id="track-section">
+        <div id="track-box">
+            <h2>Enter Application Number</h2>
+            <form id="track-form">
+                <label for="app-number">Application Number</label>
+                <input type="text" id="app-number" name="app-number" required>
+
+                <button class="green-button" type="submit">Track Application</button>
+            </form>
+
+            <!-- Placeholder for Tracking Result -->
+            <div id="track-result" style="display: none;">
+                <h3>Application Status:</h3>
+                <p id="status-message"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 AYUSH Startup Registration Portal</p>
+    </footer>
+
+    <script src="track.js"></script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYUSH Startup Registration Portal</title>
+    <link rel="stylesheet" href="sih.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>AYUSH Startup Registration Portal</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#register">Register</a></li>
+            <li><a href="#track">Track Application</a></li>
+            <li><a href="#support">Support</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <section id="main-content">
+        <div id="register">
+            <h2>Register Your Startup</h2>
+            <form>
+                <!-- Sector Dropdown -->
+                <div class="form-row">
+                    <label for="sector">Sector:</label>
+                    <select id="sector" name="sector" required>
+                        <option value="" disabled selected>Select your sector</option>
+                        <option value="ayurveda">Ayurveda</option>
+                        <option value="yoga">Yoga</option>
+                        <option value="naturopathy">Naturopathy</option>
+                        <option value="unani">Unani</option>
+                        <option value="siddha">Siddha</option>
+                        <option value="homeopathy">Homeopathy</option>
+                    </select>
+                </div>
+
+                <!-- Document sections -->
+                <div id="ayurveda-docs" class="hidden">
+                    <h3>Ayurveda Documents</h3>
+                    <div class="form-row">
+                        <label for="ayurveda-certificate">Certificate of Ayurvedic Product Registration:</label>
+                        <input type="file" id="ayurveda-certificate" name="ayurveda-certificate">
+                    </div>
+                    <div class="form-row">
+                        <label for="product-formula">Product Formula and Ingredients List:</label>
+                        <input type="file" id="product-formula" name="product-formula">
+                    </div>
+                    <div class="form-row">
+                        <label for="clinical-trials">Clinical Trial Reports:</label>
+                        <input type="file" id="clinical-trials" name="clinical-trials">
+                    </div>
+                    <div class="form-row">
+                        <label for="manufacturing-license">Manufacturing License:</label>
+                        <input type="file" id="manufacturing-license" name="manufacturing-license">
+                    </div>
+                    <div class="form-row">
+                        <label for="gmp-certificate">GMP Certificate:</label>
+                        <input type="file" id="gmp-certificate" name="gmp-certificate">
+                    </div>
+                </div>
+
+                <div id="yoga-docs" class="hidden">
+                    <h3>Yoga Documents</h3>
+                    <div class="form-row">
+                        <label for="yoga-certification">Yoga Practice Certification:</label>
+                        <input type="file" id="yoga-certification" name="yoga-certification">
+                    </div>
+                    <div class="form-row">
+                        <label for="training-credentials">Training and Teaching Credentials:</label>
+                        <input type="file" id="training-credentials" name="training-credentials">
+                    </div>
+                    <div class="form-row">
+                        <label for="safety-certifications">Safety and Hygiene Certifications:</label>
+                        <input type="file" id="safety-certifications" name="safety-certifications">
+                    </div>
+                    <div class="form-row">
+                        <label for="yoga-facility">Yoga Facility Registration:</label>
+                        <input type="file" id="yoga-facility" name="yoga-facility">
+                    </div>
+                </div>
+
+                <div id="naturopathy-docs" class="hidden">
+                    <h3>Naturopathy Documents</h3>
+                    <div class="form-row">
+                        <label for="naturopathy-protocols">Naturopathic Treatment Protocols:</label>
+                        <input type="file" id="naturopathy-protocols" name="naturopathy-protocols">
+                    </div>
+                    <div class="form-row">
+                        <label for="practitioner-licenses">Practitioner Licenses:</label>
+                        <input type="file" id="practitioner-licenses" name="practitioner-licenses">
+                    </div>
+                    <div class="form-row">
+                        <label for="facility-certifications">Facility Certifications:</label>
+                        <input type="file" id="facility-certifications" name="facility-certifications">
+                    </div>
+                    <div class="form-row">
+                        <label for="clinical-evidence">Clinical Evidence:</label>
+                        <input type="file" id="clinical-evidence" name="clinical-evidence">
+                    </div>
+                </div>
+
+                <div id="unani-docs" class="hidden">
+                    <h3>Unani Documents</h3>
+                    <div class="form-row">
+                        <label for="unani-product-registration">Unani Product Registration:</label>
+                        <input type="file" id="unani-product-registration" name="unani-product-registration">
+                    </div>
+                    <div class="form-row">
+                        <label for="product-composition">Product Composition:</label>
+                        <input type="file" id="product-composition" name="product-composition">
+                    </div>
+                    <div class="form-row">
+                        <label for="manufacturing-licenses">Manufacturing and Quality Control Licenses:</label>
+                        <input type="file" id="manufacturing-licenses" name="manufacturing-licenses">
+                    </div>
+                    <div class="form-row">
+                        <label for="unani-clinical-evidence">Clinical Evidence:</label>
+                        <input type="file" id="unani-clinical-evidence" name="unani-clinical-evidence">
+                    </div>
+                </div>
+
+                <div id="siddha-docs" class="hidden">
+                    <h3>Siddha Documents</h3>
+                    <div class="form-row">
+                        <label for="siddha-product-registration">Siddha Product Registration:</label>
+                        <input type="file" id="siddha-product-registration" name="siddha-product-registration">
+                    </div>
+                    <div class="form-row">
+                        <label for="formulation-details">Formulation Details:</label>
+                        <input type="file" id="formulation-details" name="formulation-details">
+                    </div>
+                    <div class="form-row">
+                        <label for="siddha-manufacturing-license">Manufacturing License:</label>
+                        <input type="file" id="siddha-manufacturing-license" name="siddha-manufacturing-license">
+                    </div>
+                    <div class="form-row">
+                        <label for="siddha-clinical-trials">Clinical Trial Documentation:</label>
+                        <input type="file" id="siddha-clinical-trials" name="siddha-clinical-trials">
+                    </div>
+                </div>
+
+                <div id="homeopathy-docs" class="hidden">
+                    <h3>Homeopathy Documents</h3>
+                    <div class="form-row">
+                        <label for="homeopathy-product-registration">Homeopathic Product Registration:</label>
+                        <input type="file" id="homeopathy-product-registration" name="homeopathy-product-registration">
+                    </div>
+                    <div class="form-row">
+                        <label for="homeopathy-product-formula">Product Formula:</label>
+                        <input type="file" id="homeopathy-product-formula" name="homeopathy-product-formula">
+                    </div>
+                    <div class="form-row">
+                        <label for="homeopathy-manufacturing-license">Manufacturing License:</label>
+                        <input type="file" id="homeopathy-manufacturing-license" name="homeopathy-manufacturing-license">
+                    </div>
+                    <div class="form-row">
+                        <label for="homeopathy-clinical-studies">Clinical Studies:</label>
+                        <input type="file" id="homeopathy-clinical-studies" name="homeopathy-clinical-studies">
+                    </div>
+                </div>
+
+                <!-- General Documents -->
+                <div id="general-docs">
+                    <h3>General Documents</h3>
+                    <div class="form-row">
+                        <label for="business-plan">Business Plan:</label>
+                        <input type="file" id="business-plan" name="business-plan">
+                    </div>
+                    <div class="form-row">
+                        <label for="proof-of-address">Proof of Address:</label>
+                        <input type="file" id="proof-of-address" name="proof-of-address">
+                    </div>
+                    <div class="form-row">
+                        <label for="identity-proof">Identity Proof:</label>
+                        <input type="file" id="identity-proof" name="identity-proof">
+                    </div>
+                    <div class="form-row">
+                        <label for="financial-statements">Financial Statements:</label>
+                        <input type="file" id="financial-statements" name="financial-statements">
+                    </div>
+                    <div class="form-row">
+                        <label for="compliance-certificates">Compliance Certificates:</label>
+                        <input type="file" id="compliance-certificates" name="compliance-certificates">
+                    </div>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div id="track">
+            <h2>Track Your Application</h2>
+            <p>Enter your application number below:</p>
+            <input type="text" placeholder="Application Number">
+            <button>Track</button>
+        </div>
+
+        <div id="support">
+            <h2>Support</h2>
+            <p>Contact us at support@ayushportal.com for any queries.</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 AYUSH Startup Registration Portal</p>
+    </footer>
+
+    <script src="sih.js"></script>
+</body>
+</html>
